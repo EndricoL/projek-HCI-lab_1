@@ -1,0 +1,390 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: Verdana, Geneva, sans-serif;
+font-size: 14px;
+background: #f2f2f2;
+}
+
+header, footer{
+  background-color: #484848;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5vw 0;
+  font-size: 1.5vw;
+  font-weight: 800;
+  margin-top: 8vw;
+}
+
+header{
+  margin-bottom: 5vw;
+}
+
+#TopHeader{
+  height: 20vw;
+}
+
+#TopHeader > div{
+  height: 15vw;
+  width: 100%;
+  opacity: 0.5;
+  background-color: #484848;
+  z-index: 2;
+  position: absolute;
+}
+
+#TopHeader > img{
+  height: 15vw;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+#TopHeader > p{
+  position: absolute;
+  top: 4.3vw;
+  left: 20vw;
+  font-size: 4vw;
+  font-weight: 900;
+  z-index: 3;
+}
+
+#logo{
+  width: 5.7vw;
+  height: 3.7vw;
+}
+
+#NavBar img{
+  width: 8.5vw;
+  height: 5vw;
+  margin-left: 4vw;
+  margin-top: -0.5vw;
+}
+
+#NavBar{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-top: -5vw;
+}
+
+#Navigation{
+  margin-left: 14.5vw;
+  font-size: 1.3vw;
+  font-weight: 700;
+  padding: 0;
+  white-space: nowrap;
+}
+
+#Navigation a{
+  text-decoration: none;
+  color: white;
+}
+
+#Navigation > ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: 2vw;
+  padding: 0;
+}
+
+#Navigation > ul > li{
+  padding: 1.3vw 4vw;
+}
+
+#Navigation ul li:hover{
+  background-color: black;
+}
+
+#Navigation ul li ul{
+  display: none;
+}
+
+#Navigation ul li:hover ul{
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0;
+  margin-left: -4vw;
+  margin-top: 1.2vw;
+  position: absolute;
+}
+
+#Navigation > ul > li > ul > li{
+  list-style: none;
+  padding: 1.5vw 2.3vw;
+  width: 8.4vw;
+}
+
+#Navigation ul li ul li:hover{
+  background-color: #484848;
+}
+
+.wrap {
+  background-color: #fff;
+  width:500px;
+  padding: 25px;
+  margin: 50px auto 0;
+  border-top: 5px solid #484848;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.wrap h2{
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.inputAll{
+  width: 90%;
+  position: relative;
+  margin: 20px auto;
+  
+}
+.lock{
+  padding:8px 11px;
+}
+
+.name{
+  width: 45%;
+  padding:8px 0 8px 40px;
+}
+
+.inputAll span{
+  margin-left: 35px;
+}
+
+.txtName{
+  width: 100%;
+  padding:8px 0 8px 40px;
+}
+
+.inputAll i{
+  position: absolute;
+  font-size: 18px;
+  border-right: 1px solid #cccccc;
+}
+
+.email{
+  padding: 8px;
+}
+
+.txtName, .name{
+  border: 1px solid #cccccc;
+  outline: none;
+  -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.txtName:hover, .name:hover{
+  background-color: #fafafa;
+}
+
+.txtName:focus, .name:focus{
+  -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    border: 1px solid #f5ba1a;
+    background: #fafafa;
+}
+
+.radioBtn{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.gender {
+  margin-right: 1em;
+}
+
+.gender:before {
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 100%;
+  vertical-align: -3px;
+  border: 2px solid #cccccc;
+  padding: 0.15em;
+  background-color: transparent;
+  background-clip: content-box;
+  transition: all 0.2s ease;
+}
+
+.radioBtn:hover + .gender:before {
+  border-color: #000;
+}
+
+.radioBtn:checked + .gender:before {
+  background-color:#000;
+  border-color: #000;
+}
+
+.chx{
+  margin-right: 1em;
+      position: relative;
+}
+
+.chx::before{
+  content: "";
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin-right: 0.5em;
+  vertical-align: -2px;
+  border: 2px solid #cccccc;
+  padding: 0.12em;
+  background-color: transparent;
+  background-clip: content-box;
+  transition: all 0.2s ease;
+}
+
+.chx::after{
+  border-right: 2px solid #000;
+        border-top: 2px solid #0000;
+        content: "";
+        height: 20px;
+        left: 2px;
+        position: absolute;
+        top: 7px;
+        transform: scaleX(-1) rotate(135deg);
+        transform-origin: left top;
+        width: 7px;
+        display: none;
+}
+
+.chxBtn{
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.chxBtn:hover +.chx::before{
+  border-color: #000;
+}
+
+.chxBtn:checked +.chx::before{
+  border-color: #000;
+}
+
+.chxBtn:checked +.chx::after{
+  -moz-animation: check 0.8s ease 0s running;
+      -webkit-animation: check 0.8s ease 0s running;
+      animation: check 0.8s ease 0s running;
+      display: block;
+      width: 5px;
+      height: 12px;
+      border-color: #000;
+}
+
+@-webkit-keyframes check {
+  0% { height: 0; width: 0; }
+  25% { height: 0; width: 7px; }
+  50% { height: 20px; width: 7px; }
+}
+
+@keyframes check {
+  0% { height: 0; width: 0; }
+  25% { height: 0; width: 7px; }
+  50% { height: 20px; width: 7px; }
+}
+
+.button{
+  background:#484848;
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button:hover{
+    background-color: #484848;
+}
+
+@media (max-width: 800px) {
+  .wrap{
+      width: 100%;
+  }
+  .inputAll{
+      margin-bottom: -10px;
+  }
+  .name{
+      width: 100%;
+      padding:8px 0 8px 40px;
+      margin-bottom: 10px;
+  }
+  .inputAll span{
+      padding: 0;
+      margin:0;
+  }
+
+    /* header & footer */
+
+  footer{
+    font-size: 2vw;
+  }
+
+  #Title{
+    font-size: 6vw;
+  }
+
+  #Navigation{
+    margin-left: 8vw;
+    font-size: 1.3vw;
+  }
+  
+  #Navigation > ul > li > ul > li{
+    padding: 2vw 3.2vw;
+    width: 14.5vw;
+  }
+
+  #Navigation > ul > li{
+    padding: 2vw 4vw;
+  }
+
+  #NavBar img{
+    width: 8.5vw;
+    height: 5vw;
+    margin-left: 4vw;
+    margin-top: 0.5vw;
+  }
+}
+
+
