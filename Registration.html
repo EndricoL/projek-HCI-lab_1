@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="./css/Registration.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="Registration.js"></script>
+</head>
+<body>
+  <header>
+    <div id="TopHeader">
+        <div></div>
+        <img src="./header.jpg" alt="headerPhoto">
+        <p>"Your Satisfaction is Our Priority"</p>
+    </div>
+    <div id="NavBar">
+        <span id="logo">
+            <img src="./HCI projek lab logo.png" alt="logo">
+        </span>
+        <span id="Navigation">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li>Products
+                    <ul>
+                        <li><a href="./Printer.html">Printer</a></li>
+                        <li><a href="./Paper.html">Paper</a></li>
+                        <li><a href="./StationeryPencil.html">Stationery</a></li>
+                        <li><a href="./Other Stuff.html">Other Stuff</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Company_Profile.html">Company Profile</a></li>
+                <li><a href="./Contact_Us.html">Contact Us</a></li>
+                <li><a href="./Registration.html">Registration</a></li>
+            </ul>
+        </span>
+    </div>
+</header>
+    <div class="wrap">
+      <h2>Register Yourself Here</h2>
+        <div class="containers">
+          <div id="error"></div>
+          <form action="#" name="RegisterForm" id="formId">
+            <div class="inputAll">
+              <i class="fa fa-user lock"></i>
+              <input type="text" id="fnId" placeholder="First Name" class="name">
+              <span class="last">
+                <i class="fa fa-user lock"></i>
+                <input type="text" id="lnId" placeholder="Last Name" class="name">
+              </span>
+            </div>
+            <div class="inputAll">
+              <i class="fa fa-envelope email"></i>
+              <input type="email" id="emailId" placeholder="Email" class="txtName">
+            </div>
+            <div class="inputAll">
+              <input type="radio" name="gRadio" id="mRadio"class="radioBtn">
+              <label for="mRadio" class="gender">Male</label>
+              <input type="radio" name="gRadio" id="fRadio" class="radioBtn">
+              <label for="fRadio" class="gender">Female</label>
+            </div>
+            <div class="inputAll">
+              <i class="fa fa-home lock"></i>
+              <input type="text" id="addressId" placeholder="Address" class="txtName">
+            </div>
+            <div class="inputAll">
+              <i class="fa fa-map-marker lock"></i>
+              <input type="text" id="cityId" placeholder="City" class="txtName">
+                </div>
+            <div class="inputAll">
+              <input type="checkbox" id="cb1" class="chxBtn">
+              <label for="cb1" class="chx">Agreement to Company Terms and Services</label>
+            </div>
+            <div class="inputAll">
+              <input class="button" type="submit" value="Register" />
+            </div>
+          </form>
+        </div>
+    </div>
+    <footer>
+        <div>Zunder Zifflin</p></div>
+        <div>Copyright <sup>&#169;</sup> 2021</div>
+    </footer>
+  </body>
+</html>
